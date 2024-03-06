@@ -1,0 +1,162 @@
+:root {
+  --Bright-orange: #e38826;
+  --Dark-cyan: #006970;
+  --Very-dark-cyan: #004241;
+  --Transparent-white: #ffffffbf;
+  --Very-light-gray: #f2f2f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--Transparent-white);
+  background-color: var(--Very-light-gray);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+main {
+  width: 829px;
+  height: 451px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card_1,
+.card_2,
+.card_3 {
+  width: 17.25rem;
+  height: 451px;
+  padding: 45px 60px 0 43px;
+}
+
+.card_1 {
+  background-color: var(--Bright-orange);
+}
+
+.card_1 button {
+  color: var(--Bright-orange);
+}
+
+.card_2 {
+  background-color: var(--Dark-cyan);
+}
+
+.card_2 button {
+  color: var(--Dark-cyan);
+}
+
+.card_3 {
+  background-color: var(--Very-dark-cyan);
+}
+
+.card_3 button {
+  color: var(--Very-dark-cyan);
+}
+
+H1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  margin: 39px 0 39px 0;
+}
+
+p {
+  width: 209px;
+  height: 103px;
+  font-size: 1em;
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+button {
+  width: 132px;
+  height: 45px;
+  border-radius: 22px;
+  border: none;
+  transition: 1s;
+  margin-top: 79px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: var(--Transparent-white) 2px solid;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: black;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    height: 1502px;
+  }
+
+  main {
+    width: 80vw;
+    height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+  }
+
+  .card_1,
+  .card_2,
+  .card_3 {
+    width: 100%;
+    height: 650px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  button {
+    width: 150px;
+    height: 60px;
+    border-radius: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    height: 1502px;
+  }
+
+  main {
+    width: 80vw;
+    height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+  }
+
+  .card_1,
+  .card_2,
+  .card_3 {
+    width: 100%;
+    height: 650px;
+  }
+}
